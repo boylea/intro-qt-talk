@@ -39,9 +39,7 @@ I create Graphical User Interfaces (GUIs) for scientific research
 
 ---------------------------------------------------------------------------
 
-:data-x: 0
-:data-y: r2200
-
+:data-x: r2000
 
 Why Qt?
 =======
@@ -56,8 +54,8 @@ Great API and docs
 
 ---------------------------------------------------------------------------
 
-:data-x: r2000
-:data-y: r0
+:data-x: 0
+:data-y: r2200
 
 Event Driven Programming
 ========================
@@ -65,6 +63,9 @@ Event Driven Programming
 Programming paradigm where the flow of execution is directed by events, such as user clicks
 
 ---------------------------------------------------------------------------
+
+:data-x: r2000
+:data-y: r0
 
 Linear Paradigm
 ===============
@@ -86,6 +87,9 @@ Linear Paradigm
 
 ---------------------------------------------------------------------------
 
+:data-x: r2000
+:data-y: r0
+
 Event-Driven Paradigm
 =====================
 
@@ -105,9 +109,9 @@ Event-Driven Paradigm
     - Non-busy wait
 
 ---------------------------------------------------------------------------
-
+    
 Where Do Events Come From?
-=========================
+==========================
 
 * Key presses, mouse clicks
 * Sockets activity
