@@ -106,7 +106,7 @@ Event-Driven Paradigm
 
 ---------------------------------------------------------------------------
 
-Where Do Event Come From?
+Where Do Events Come From?
 =========================
 
 * Key presses, mouse clicks
@@ -375,12 +375,11 @@ Slots are any function with the appropriate parameters
 ===========================  =========================  
  PyQt                         PySide   
 ===========================  =========================
-GPL                           LGPL
 Large user base               Newer, smaller user base
-Signals called "pyqtSignal"   signals called "Signal"
+Signals called "pyqtSignal"   Signals called "Signal"
 Support for Qt5               No support for Qt5 (yet)
-Dropped Python 2.7 support
-===========================  ========================= 
+GPL                           LGPL
+===========================  =========================
 
 ---------------------------------------------------------------------------
 
