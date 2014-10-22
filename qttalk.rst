@@ -15,6 +15,10 @@ Intro to Desktop Applications with Qt
 (and Python, of course)
 .......................
 
+.. note::
+
+    All examples here will work with either binding
+
 ---------------------------------------------------------------------------
 
 :data-scale: 1
@@ -29,11 +33,14 @@ About Me
 I create Graphical User Interfaces (GUIs) for scientific research
 ..................................................................
 
+.. note::
+
+    Almost finished developing a new data acquisition system for the electrophysiology rig. I have used PyQt for the GUI
+
 ---------------------------------------------------------------------------
 
-:data-x: r2000
-:data-y: r0
-:data-scale: 1
+:data-x: 0
+:data-y: r2200
 
 
 Why Qt?
@@ -73,6 +80,10 @@ Linear Paradigm
     def stuff(sdfsd):
         pass
 
+.. note::
+
+    Probably the most common way people are introduced to programming
+
 ---------------------------------------------------------------------------
 
 Event-Driven Paradigm
@@ -86,6 +97,12 @@ Event-Driven Paradigm
             dispatch_next_event()
 
         wait_for_more_events()
+
+.. note::
+
+    - Similarity to web servers
+
+    - Non-busy wait
 
 ---------------------------------------------------------------------------
 
@@ -102,10 +119,14 @@ Where Do Event Come From?
 In Qt, events are objects
 =========================
 
-* All derived from abstract QEvent class
 * Represent things that have happened either within the application, or outside
+* All derived from abstract QEvent class
 * Events can be handled by any instance of QObject, almost always this is a QWidget
 * Events can be passed among many handlers before the event is accepted
+
+.. note::
+
+    Naming notation : Q-
 
 ---------------------------------------------------------------------------
 
@@ -120,7 +141,14 @@ Receive events, do something useful
        if event.button == 'left':
           do_that_cool_thing()
 
+.. note::
+
+    Event handlers are the pieces of code which decide what action to take in response to an event
+
 ---------------------------------------------------------------------------
+
+:data-x: 0
+:data-y: r2200
 
 Widgets
 =======
@@ -129,7 +157,14 @@ Widgets
 * e.g. windows, buttons, input fields
 * QWidget or a subclass of
 
+.. note::
+
+    A QWidget all by itself is an emtpy window
+
 ---------------------------------------------------------------------------
+
+:data-x: r2000
+:data-y: r0
 
 Hello World
 ===========
@@ -146,6 +181,10 @@ Hello World
     app.exec_()
 
 .. image:: img/hello.png
+
+.. note::
+
+    Any widget without a parent is, by default, a window, so this button shows up as it own window.
 
 ---------------------------------------------------------------------------
 
@@ -171,6 +210,10 @@ Putting it Together
         hello_widget.show()
 
         app.exec_()
+
+.. note::
+
+    The first thing we do is call super, since there may be other handlers that process this event. In this case the super class event handlers cause the button to have the depressed appearance.
 
 ---------------------------------------------------------------------------
 
@@ -200,6 +243,10 @@ Widgets are containers
 ..         my_widget = MyWidget()
 ..         my_widget.show()
 ..         app.exec_()
+
+.. note::
+
+    Any widget that contains another widget is called its "parent", and the widgets inside it are "children"
 
 ---------------------------------------------------------------------------
 
@@ -235,11 +282,16 @@ Using events to edit other widgets
             else:
                 self.label.setText(self.label.text() + event.text())
 
+.. note::
+
+    So How do we use events to make changes to other widgets? We could reassign the event handler to the parent widget, while calling super on the static method of the original class... but don't do this, it's a mess and there is a better way.
 
 ---------------------------------------------------------------------------
 
 :id: signals-slots
 
+:data-x: 0
+:data-y: r2200
 
 Signals and Slots
 ==================
@@ -250,7 +302,14 @@ Signals and Slots
 * We can also create our our signals, emitted on demand
 * Allows for looser coupling
 
+.. note::
+
+    A signal is emitted when a particular event occurs. signals can have parameters that they emit with the signal. Slots can be connected to widgets, so that when a signal is emitted, that slot gets executed. Any method with the correct arguments can serve as a slot.
+
 ---------------------------------------------------------------------------
+
+:data-x: r2000
+:data-y: r0
 
 Much better...
 ==============
@@ -308,6 +367,9 @@ Slots are any function with the appropriate parameters
 
 ---------------------------------------------------------------------------
 
+:data-x: 0
+:data-y: r2200
+
 :id: pyqt-vs-pyside
 
 ===========================  =========================  
@@ -315,12 +377,15 @@ Slots are any function with the appropriate parameters
 ===========================  =========================
 GPL                           LGPL
 Large user base               Newer, smaller user base
-Signals called "pyqtSignal"   signals called "signal"
+Signals called "pyqtSignal"   signals called "Signal"
 Support for Qt5               No support for Qt5 (yet)
 Dropped Python 2.7 support
 ===========================  ========================= 
 
 ---------------------------------------------------------------------------
+
+:data-x: r2000
+:data-y: r0
 
 Qt has classes for Web, Databases, and more!
 ============================================
@@ -366,6 +431,10 @@ Bare Bones Browser
 
 ---------------------------------------------------------------------------
 
+:data-rotate-x: -90
+:data-x: r0
+:data-y: r1000
+
 Go Make Cool Things!
 ====================
 
@@ -377,8 +446,9 @@ Visit me at `amyboyle.ninja`_
 ---------------------------------------------------------------------------
 
 :id: overview
-:data-x: r-20000
-:data-scale: 35
+:data-x: 5000
+:data-y: 5000
+:data-scale: 15
 :data-rotate-z: 0
 :data-rotate-x: 0
 :data-rotate-y: 0
