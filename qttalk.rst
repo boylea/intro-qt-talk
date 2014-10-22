@@ -54,8 +54,9 @@ Great API and docs
 
 ---------------------------------------------------------------------------
 
-:data-x: 0
+:data-x: r0
 :data-y: r2200
+:data-rotate-z: 180
 
 Event Driven Programming
 ========================
@@ -64,7 +65,7 @@ Programming paradigm where the flow of execution is directed by events, such as 
 
 ---------------------------------------------------------------------------
 
-:data-x: r2000
+:data-x: r-2000
 :data-y: r0
 
 Linear Paradigm
@@ -86,9 +87,6 @@ Linear Paradigm
     Probably the most common way people are introduced to programming
 
 ---------------------------------------------------------------------------
-
-:data-x: r2000
-:data-y: r0
 
 Event-Driven Paradigm
 =====================
@@ -151,8 +149,9 @@ Receive events, do something useful
 
 ---------------------------------------------------------------------------
 
-:data-x: 0
+:data-x: r0
 :data-y: r2200
+:data-rotate-z: r180
 
 Widgets
 =======
@@ -294,8 +293,9 @@ Using events to edit other widgets
 
 :id: signals-slots
 
-:data-x: 0
+:data-x: r0
 :data-y: r2200
+:data-rotate-z: 180
 
 Signals and Slots
 ==================
@@ -312,7 +312,7 @@ Signals and Slots
 
 ---------------------------------------------------------------------------
 
-:data-x: r2000
+:data-x: r-2000
 :data-y: r0
 
 Much better...
@@ -371,8 +371,9 @@ Slots are any function with the appropriate parameters
 
 ---------------------------------------------------------------------------
 
-:data-x: 0
+:data-x: r0
 :data-y: r2200
+:data-rotate-z: r180
 
 :id: pyqt-vs-pyside
 
