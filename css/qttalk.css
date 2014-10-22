@@ -69,6 +69,10 @@ td {
   opacity:0.2;
 }
 
+div#spikey-zoom{
+  opacity:1;
+}
+
 /*couple slides needed shrinking to fit...*/
 div#dont-do-this, div#bones-browser {
   font-size: 75%;

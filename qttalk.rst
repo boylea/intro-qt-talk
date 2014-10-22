@@ -7,7 +7,7 @@
 
 ---------------------------------------------------------------------------
 
-:data-scale: 2
+:data-scale: 1
 
 Intro to Desktop Applications with Qt
 =====================================
@@ -37,9 +37,23 @@ I create Graphical User Interfaces (GUIs) for scientific research
 
     Almost finished developing a new data acquisition system for the electrophysiology rig. I have used PyQt for the GUI
 
+
+---------------------------------------------------------------------------
+
+:id: spikey-zoom
+
+:data-scale: 0.2
+:data-x: r0
+:data-y: r320
+
+.. image:: img/spikeyshot.png
+    :width: 1300px
+
 ---------------------------------------------------------------------------
 
 :data-x: r2000
+:data-y: r-250
+:data-scale: 1
 
 Why Qt?
 =======
@@ -157,7 +171,7 @@ Widgets
 =======
 
 * Basic UI elements that make up the part you see
-* e.g. windows, buttons, input fields
+* E.g. windows, buttons, input fields
 * QWidget or a subclass of
 
 .. note::
@@ -442,10 +456,14 @@ Bare Bones Browser
 Go Make Cool Things!
 ====================
 
-Visit me at `amyboyle.ninja`_
-..............................
+Presentation at `amyboyle.ninja`_
+..................................
+
+Slides + examples on github_ (boylea/intro-qt-talk)
+...................................................
 
 .. _amyboyle.ninja: http://www.amyboyle.ninja
+.. _github: https://github.com/boylea/intro-qt-talk
 
 ---------------------------------------------------------------------------
 
