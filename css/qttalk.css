@@ -43,6 +43,11 @@ pre {
     width:80%;
 }
 
+td {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+
 #pyqt-vs-pyside p{
   padding:0.1em;
   margin:0;
