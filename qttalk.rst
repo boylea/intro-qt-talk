@@ -402,8 +402,20 @@ GPL                           LGPL
 
 ---------------------------------------------------------------------------
 
+:id: install-note
+
+:data-y: r350
+:data-scale: 0.3
+
+``*`` See my posts on installing in a virtualenv in Linux_ or Windows_
+
+.. _Linux: http://amyboyle.ninja/Python-Qt-and-virtualenv-in-linux/
+.. _Windows: http://amyboyle.ninja/Python-Qt-and-virtualenv-in-windows/
+
+---------------------------------------------------------------------------
+
 :data-x: r2000
-:data-y: r0
+:data-y: r-200
 
 Qt has classes for Web, Databases, and more!
 ============================================
@@ -459,7 +471,7 @@ Go Make Cool Things!
 Presentation at `amyboyle.ninja`_
 ..................................
 
-Slides + examples on github_ (boylea/intro-qt-talk)
+Slides + examples on github_
 ...................................................
 
 .. _amyboyle.ninja: http://www.amyboyle.ninja
